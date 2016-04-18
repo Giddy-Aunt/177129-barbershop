@@ -29,74 +29,60 @@
 				</nav>
 				<div class="user-block">
 					<a class="btn login-btn" href="#">Вход</a>
-					<div class="login-form">
-						<h2 class="title">Личный кабинет</h2>
-						<p>Введите пожалуйста свой логин и пароль</p>
-						<form action="#" method="post">
-							<label for="login-field">Логин</label>
-							<input type="text" name="login" id="login-field" placeholder="Логин">
-							<label for="password-field">Пароль</label>
-							<input type="password" name="password" id="password-field" placeholder="Пароль">
-							<label>			
-								<input type="checkbox" id="remember-field" name="rememberme">
-								Запомните меня
-							</label>
-							<a class="link" href="#">Я забыл пароль!</a>
-							<button class="btn" type="submit">Войти</button>
-						</form>
-					</div>
 				</div>
 			</div>	
 		</header>
 		<main class="container">
 			<h1 class="page-title">Средства для ухода</h1>
 			<nav class="breadcrumbs">
-					<a href="#">Главная</a>
-					<a href="#">Магазин</a>
-					<span class="breadcrumbs-current">Средства для ухода</span>
+				<ul>
+					<li>
+						<a href="#">Главная</a>
+					</li>
+					<li>
+						<a href="#">Магазин</a>
+					</li>
+					<li>
+					<a class="breadcrumbs-current" href="#">Средства для ухода</a>
+					</li>
+				</ul>
 			</nav>
 			<form class="filters" action="#" method="post">
+				<h2 class="title">Производители</h2>
 				<fieldset>
-					<legend class="title">Производители</legend>
-					<label>
 					<input type="checkbox" id="baxter-field" name="baxter">
-					Baxter of California
-					</label>
-					<label>
-						<input type="checkbox" id="mrnatty-field" name="mrnatty">
-						Mr Natty
-					</label>
-					<label>
-						<input type="checkbox" id="suavecito-field" name="suavecito">
-						Suavecito
-					</label>
-					<label>
-						<input type="checkbox" id="malin-field" name="malin">
-						Malin+Goetz
-					</label>
-					<label>
-						<input type="checkbox" id="muurays-field" name="murrays">
-						Murray’s
-					</label>
-					<label>
-						<input type="checkbox" id="americancrew-field" name="americancrew">
-						American Crew
-					</label>
+					<label for="baxter-field">Baxter of California</label>
+				<fieldset>
+					<input type="checkbox" id="mrnatty-field" name="mrnatty">
+					<label for="mrnatty-field">Mr Natty</label>
+				</fieldset> 
+				<fieldset>
+					<input type="checkbox" id="suavecito-field" name="suavecito">
+					<label for="suavecito-field">Suavecito</label>
 				</fieldset>
 				<fieldset>
-					<legend class="title">Группы товаров:</legend>
-					<label>
-						<input type="radio" id="shaving-field" name="product-type" value="shaving">
-						Бритвенные принадлежности
-					</label>
-					<label>
-						<input type="radio" id="care-field" name="product-type" value="care">
-						Средства для ухода
-					</label>
-					<label>
-						<input type="radio" id="accessories-field" name="product-type" value="accessories">
-						Аксессуары
-					</label>
+					<input type="checkbox" id="malin-field" name="malin">
+					<label for="malin-field">Malin+Goetz</label>
+				</fieldset>
+				<fieldset>
+					<input type="checkbox" id="muurays-field" name="murrays">
+					<label for="muurays-field">Murray’s</label>
+				</fieldset>
+					<input type="checkbox" id="americancrew-field" name="americancrew">
+					<label for="americancrew-field">American Crew</label>
+				</fieldset>
+				<h2 class="title">Группы товаров:</h2>
+				<fieldset>	
+					<input type="radio" id="shaving-field" name="product-type" value="shaving">
+					<label for="shaving-field">Бритвенные принадлежности</label>
+				</fieldset>	
+				<fieldset>	
+					<input type="radio" id="care-field" name="product-type" value="care">
+					<label for="care-field">Средства для ухода</label>
+				</fieldset>
+				<fieldset>
+					<input type="radio" id="accessories-field" name="product-type" value="accessories">
+					<label for="accessories-field">Аксессуары</label>
 				</fieldset>
 				<button class="btn" type="submit">Посмотреть</button>
 			</form>
@@ -104,8 +90,7 @@
 				<article class="item travel-kit">
 					<a href="catalog-item.html">
 						<img width="220" height="165" src="http://placehold.it/220x165" alt="Набор для путешествий «Baxter of California»">
-					</a>
-					<a href="catalog-item.html"><span class="product-name">Набор для путешествий</span><br>«Baxter of California»
+						<span class="product-name">Набор для путешествий</span><br>«Baxter of California»
 					</a>
 					<div class="price">2 900 руб.</div>
 					<a class="btn buy" href="#">Купить</a>
@@ -113,8 +98,7 @@
 				<article class="item travel-kit">
 					<a href="#">
 						<img width="220" height="165" src="http://placehold.it/220x165" alt="Увлажняющий кондиционер «Baxter of California»">
-					</a>
-					<a href="#"><span class="product-name">Увлажняющий кондиционер</span><br>«Baxter of California»
+						<span class="product-name">Увлажняющий кондиционер</span><br>«Baxter of California»
 					</a>
 					<div class="price">750 руб.</div>
 					<a class="btn buy" href="#">Купить</a>
@@ -122,8 +106,7 @@
 				<article class="item travel-kit">
 					<a href="#">
 						<img width="220" height="165" src="http://placehold.it/220x165" alt="Гель для волос «SUAVECITO»">
-					</a>
-					<a href="#"><span class="product-name">Гель для волос</span><br>«SUAVECITO»
+						<span class="product-name">Гель для волос</span><br>«SUAVECITO»
 					</a>
 					<div class="price">290 руб.</div>
 					<a class="btn buy" href="#">Купить</a>
@@ -131,8 +114,7 @@
 				<article class="item hair-clay">
 					<a href="#">
 						<img width="220" height="165" src="http://placehold.it/220x165" alt="Глина для укладки волос «American crew»">
-					</a>
-					<a href="#"><span class="product-name">Глина для укладки волос</span><br>«American crew»
+						<span class="product-name">Глина для укладки волос</span><br>«American crew»
 					</a>
 					<div class="price">500 руб.</div>
 					<a class="btn buy" href="#">Купить</a>
@@ -140,8 +122,7 @@
 				<article class="item travel-kit">
 					<a href="#">
 						<img width="220" height="165" src="http://placehold.it/220x165" alt="Гель для волос «American crew»">
-					</a>
-					<a href="#"><span class="product-name">Гель для волос</span><br>«American crew»
+						<span class="product-name">Гель для волос</span><br>«American crew»
 					</a>
 					<div class="price">300 руб.</div>
 					<a class="btn buy" href="#">Купить</a>
@@ -149,18 +130,27 @@
 				<article class="item travel-kit">
 					<a href="#">
 						<img width="220" height="165" src="http://placehold.it/220x165" alt="Набор для бритья «Baxter of California»">
-					</a>
-					<a href="#"><span class="product-name">Набор для бритья</span><br>«Baxter of California»
+						<span class="product-name">Набор для бритья</span><br>«Baxter of California»
 					</a>
 					<div class="price">3 900 руб.</div>
 					<a class="btn buy" href="#">Купить</a>
 				</article>					
 			</section>
 			<div class="paginator">
-				<a class="btn" href="#">1</a>
-				<span class="current">2</span>
-				<a class="btn" href="#">3</a>
-				<a class="btn" href="#">4</a>
+				<ul>
+					<li>
+						<a class="btn" href="#">1</a>
+					</li>
+					<li>
+						<a class="current" href="#">2</a>
+					</li>
+					<li>
+						<a class="btn" href="#">3</a>
+					</li>
+					<li>
+						<a class="btn" href="#">4</a>
+					</li>
+				</ul>
 			</div>
 		</main>
 		<footer class="main-footer">
@@ -183,5 +173,21 @@
 				</section>
 			</div>
 		</footer>
+		<div class="login-form">
+			<h2 class="title">Личный кабинет</h2>
+			<p>Введите пожалуйста свой логин и пароль</p>
+			<form action="#" method="post">
+				<label for="login-field">Логин</label>
+				<input type="text" name="login" id="login-field" placeholder="Логин">
+				<label for="password-field">Пароль</label>
+				<input type="password" name="password" id="password-field" placeholder="Пароль">
+				<label for="remember-field">			
+				<input type="checkbox" id="remember-field" name="rememberme">
+				Запомните меня
+				</label>
+				<a class="link" href="#">Я забыл пароль!</a>
+				<a class="btn" href="#">Войти</a>
+			</form>
+		</div>
 	</body>
 </html>

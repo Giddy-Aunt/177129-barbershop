@@ -29,39 +29,33 @@
 				</nav>
 				<div class="user-block">
 					<a class="btn login-btn" href="#">Вход</a>
-					<div class="login-form">
-						<h2 class="title">Личный кабинет</h2>
-						<p>Введите пожалуйста свой логин и пароль</p>
-						<form action="#" method="post">
-							<label for="login-field">Логин</label>
-							<input type="text" name="login" id="login-field" placeholder="Логин">
-							<label for="password-field">Пароль</label>
-							<input type="password" name="password" id="password-field" placeholder="Пароль">
-							<label>			
-								<input type="checkbox" id="remember-field" name="rememberme">
-								Запомните меня
-							</label>
-							<a class="link" href="#">Я забыл пароль!</a>
-							<button class="btn" type="submit">Войти</button>
-						</form>
-					</div>
 				</div>
 			</div>	
 		</header>
 		<main class="container">
 			<h1 class="page-title">Набор для путешествий «Baxter of California»</h1>
 			<nav class="breadcrumbs">
-				<a href="#">Главная</a>
-				<a href="#">Магазин</a>
-				<a href="catalog.html">Средства для ухода</a>
-				<span class="breadcrumbs-current">Набор для путешествий «Baxter of California»</span>
+				<ul>
+					<li>
+						<a href="#">Главная</a>
+					</li>
+					<li>
+						<a href="#">Магазин</a>
+					</li>
+					<li>
+						<a href="catalog.html">Средства для ухода</a>
+					</li>
+					<li>
+						<a class="breadcrumbs-current">Набор для путешествий «Baxter of California»</a>
+					</li>
+				</ul>
 			</nav>
-			<figure class="item-gallery">
+			<div class="item-gallery">
 					<img width="460" height="498" src="http://placehold.it/460x498" alt="Набор для путешествий «Baxter of California»">
 					<img width="140" height="149" src="http://placehold.it/140x149" alt="Набор для путешествий «Baxter of California»">
 					<img width="140" height="149" src="http://placehold.it/140x149" alt="Набор для путешествий «Baxter of California»">
 					<img width="140" height="149" src="http://placehold.it/140x149" alt="Набор для путешествий «Baxter of California»">
-			</figure>
+			</div>
 			<div class="item-description">
 				<div class="availability">Есть в наличии</div>	
 				<div class="code-number">Артикул: dexter-ae</div>
@@ -103,5 +97,21 @@
 				</section>
 			</div>
 		</footer>
+		<div class="login-form">
+			<h2 class="title">Личный кабинет</h2>
+			<p>Введите пожалуйста свой логин и пароль</p>
+			<form action="#" method="post">
+				<label for="login-field">Логин</label>
+				<input type="text" name="login" id="login-field" placeholder="Логин">
+				<label for="password-field">Пароль</label>
+				<input type="password" name="password" id="password-field" placeholder="Пароль">
+				<label for="remember-field">			
+				<input type="checkbox" id="remember-field" name="rememberme">
+				Запомните меня
+				</label>
+				<a class="link" href="#">Я забыл пароль!</a>
+				<a class="btn" href="#">Войти</a>
+			</form>
+		</div>
 	</body>
 </html>
