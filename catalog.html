@@ -7,7 +7,9 @@
 	<body>
 		<header class="main-header">
 			<div class="container">
-				<img width="111" height="24" src="http://placehold.it/111x24" alt="Лого">
+				<div class="header-logo">
+					<img width="111" height="24" src="http://placehold.it/111x24" alt="Лого">
+				</div>
 				<nav class="main-menu">
 					<ul>
 						<li>
@@ -43,94 +45,99 @@
 						<a href="#">Магазин</a>
 					</li>
 					<li>
-					<a class="breadcrumbs-current" href="#">Средства для ухода</a>
+					<a class="current" href="#">Средства для ухода</a>
 					</li>
 				</ul>
 			</nav>
-			<form class="filters" action="#" method="post">
-				<h2 class="title">Производители</h2>
-				<fieldset>
-					<input type="checkbox" id="baxter-field" name="baxter">
-					<label for="baxter-field">Baxter of California</label>
-				<fieldset>
-					<input type="checkbox" id="mrnatty-field" name="mrnatty">
-					<label for="mrnatty-field">Mr Natty</label>
-				</fieldset> 
-				<fieldset>
-					<input type="checkbox" id="suavecito-field" name="suavecito">
-					<label for="suavecito-field">Suavecito</label>
-				</fieldset>
-				<fieldset>
-					<input type="checkbox" id="malin-field" name="malin">
-					<label for="malin-field">Malin+Goetz</label>
-				</fieldset>
-				<fieldset>
-					<input type="checkbox" id="muurays-field" name="murrays">
-					<label for="muurays-field">Murray’s</label>
-				</fieldset>
-					<input type="checkbox" id="americancrew-field" name="americancrew">
-					<label for="americancrew-field">American Crew</label>
-				</fieldset>
-				<h2 class="title">Группы товаров:</h2>
-				<fieldset>	
-					<input type="radio" id="shaving-field" name="product-type" value="shaving">
-					<label for="shaving-field">Бритвенные принадлежности</label>
-				</fieldset>	
-				<fieldset>	
-					<input type="radio" id="care-field" name="product-type" value="care">
-					<label for="care-field">Средства для ухода</label>
-				</fieldset>
-				<fieldset>
-					<input type="radio" id="accessories-field" name="product-type" value="accessories">
-					<label for="accessories-field">Аксессуары</label>
-				</fieldset>
-				<button class="btn" type="submit">Посмотреть</button>
-			</form>
-			<section class="catalog">
-				<article class="item travel-kit">
+			<section class="content filters">
+				<form class="filters" action="#" method="post">
+					<h2 class="title">Производители</h2>
+					<fieldset>
+						<input type="checkbox" id="baxter-field" name="baxter">
+						<label for="baxter-field">Baxter of California</label>
+					<fieldset>
+						<input type="checkbox" id="mrnatty-field" name="mrnatty">
+						<label for="mrnatty-field">Mr Natty</label>
+					</fieldset> 
+					<fieldset>
+						<input type="checkbox" id="suavecito-field" name="suavecito">
+						<label for="suavecito-field">Suavecito</label>
+					</fieldset>
+					<fieldset>
+						<input type="checkbox" id="malin-field" name="malin">
+						<label for="malin-field">Malin+Goetz</label>
+					</fieldset>
+					<fieldset>
+						<input type="checkbox" id="muurays-field" name="murrays">
+						<label for="muurays-field">Murray’s</label>
+					</fieldset>
+						<input type="checkbox" id="americancrew-field" name="americancrew">
+						<label for="americancrew-field">American Crew</label>
+					</fieldset>
+					<h2 class="title">Группы товаров:</h2>
+					<fieldset>	
+						<input type="radio" id="shaving-field" name="product-type" value="shaving">
+						<label for="shaving-field">Бритвенные принадлежности</label>
+					</fieldset>	
+					<fieldset>	
+						<input type="radio" id="care-field" name="product-type" value="care">
+						<label for="care-field">Средства для ухода</label>
+					</fieldset>
+					<fieldset>
+						<input type="radio" id="accessories-field" name="product-type" value="accessories">
+						<label for="accessories-field">Аксессуары</label>
+					</fieldset>
+					<button class="btn" type="submit">Посмотреть</button>
+				</form>
+			</section>
+			<section class="content catalog">
+				<article class="product-card travel-kit">
 					<a href="catalog-item.html">
 						<img width="220" height="165" src="http://placehold.it/220x165" alt="Набор для путешествий «Baxter of California»">
-						<span class="product-name">Набор для путешествий</span><br>«Baxter of California»
+						<h2 class="product-card-title">
+							<span class="product-name">Набор для путешествий</span><br>
+							«Baxter of California»
+						</h2>
 					</a>
 					<div class="price">2 900 руб.</div>
 					<a class="btn buy" href="#">Купить</a>
 				</article>
-				<article class="item travel-kit">
+				<article class="product-card conditioner">
 					<a href="#">
 						<img width="220" height="165" src="http://placehold.it/220x165" alt="Увлажняющий кондиционер «Baxter of California»">
-						<span class="product-name">Увлажняющий кондиционер</span><br>«Baxter of California»
+						<h2 class="product-card-title"> <span class="product-name">Увлажняющий кондиционер</span><br>«Baxter of California»</h2>
 					</a>
 					<div class="price">750 руб.</div>
 					<a class="btn buy" href="#">Купить</a>
 				</article>
-				<article class="item travel-kit">
+				<article class="product-card hair-gel">
 					<a href="#">
 						<img width="220" height="165" src="http://placehold.it/220x165" alt="Гель для волос «SUAVECITO»">
-						<span class="product-name">Гель для волос</span><br>«SUAVECITO»
+						<h2 class="product-card-title"> <span class="product-name">Гель для волос</span><br>«SUAVECITO»</h2>
 					</a>
 					<div class="price">290 руб.</div>
 					<a class="btn buy" href="#">Купить</a>
 				</article>
-				<article class="item hair-clay">
+				<article class="product-card hair-clay">
 					<a href="#">
 						<img width="220" height="165" src="http://placehold.it/220x165" alt="Глина для укладки волос «American crew»">
-						<span class="product-name">Глина для укладки волос</span><br>«American crew»
+						<h2 class="product-card-title"> <span class="product-name">Глина для укладки волос</span><br>«American crew»</h2>
 					</a>
 					<div class="price">500 руб.</div>
 					<a class="btn buy" href="#">Купить</a>
 				</article>
-				<article class="item travel-kit">
+				<article class="product-card hair-gel-2">
 					<a href="#">
 						<img width="220" height="165" src="http://placehold.it/220x165" alt="Гель для волос «American crew»">
-						<span class="product-name">Гель для волос</span><br>«American crew»
+						<h2 class="product-card-title"> <span class="product-name">Гель для волос</span><br>«American crew»</h2>
 					</a>
 					<div class="price">300 руб.</div>
 					<a class="btn buy" href="#">Купить</a>
 				</article>
-				<article class="item travel-kit">
+				<article class="product-card shaving-kit">
 					<a href="#">
 						<img width="220" height="165" src="http://placehold.it/220x165" alt="Набор для бритья «Baxter of California»">
-						<span class="product-name">Набор для бритья</span><br>«Baxter of California»
+						<h2 class="product-card-title"> <span class="product-name">Набор для бритья</span><br>«Baxter of California»</h2>
 					</a>
 					<div class="price">3 900 руб.</div>
 					<a class="btn buy" href="#">Купить</a>
