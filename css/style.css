@@ -23,8 +23,6 @@ h1 {
 h2 {
 	font-size: 24px;
 	line-height: 30px;
-	
-	margin-bottom: 40px;
 }
 
 a {
@@ -61,16 +59,20 @@ a {
 }
 
 .main-menu ul,
-.paginator ul.
+.paginator ul,
 .breadcrumbs ul {
 	list-style: none;
 }
 
 .main-menu li,
-.paginator li
+.paginator li,
 .breadcrumbs li {
 	display: inline-block;
 	vertical-align: top;
+}
+
+.breadcrumbs li  {
+	margin-right: 40px;
 }
 
 .main-menu li {
@@ -103,11 +105,18 @@ a {
 	margin-bottom: 25px;
 	
 	font-size: 0;
+	
+	outline: 1px solid red;
 }
 
 .paginator {
-	clear: both;
-	margin-left: 240px;
+	margin-top: 15px;
+	
+	font-size: 14px;
+}
+
+.paginator .btn {
+	width: 45px;
 }
 
 .product-card {
@@ -132,8 +141,6 @@ a {
 	
 	font-size: 14px;
 	line-height: 18px;
-	
-	outline: 1px solid red;
 }
 
 .product-name {
@@ -151,6 +158,8 @@ a {
 
 .gallery-content {
 	float: left;
+	
+	outline: 1px solid red;
 }
 
 .photo-1  {
@@ -166,6 +175,8 @@ a {
 	float: right;
 	width: 390px;
 	padding-top: 20px;
+	
+	outline: 1px solid red;
 }
 
 .availability {
@@ -178,6 +189,22 @@ a {
 
 .product-description p {
 	clear: both;
+	margin-top: 45px;
+	margin-bottom: 40px;
+}
+
+.product-description h2 {
+	margin-top: 65px;
+	margin-bottom: 40px;
+}
+
+.product-description ul {
+	margin-top: 40px;
+	list-style: none;
+}
+
+.product-description li {
+	margin-bottom: 5px;
 }
 
 .price {
@@ -250,7 +277,7 @@ a {
 
 .login-form input[type="text"],
 .login-form input[type="password"] {
-	width: 260px;
+	width: 280px;
 	padding: 10px 8px;
 	
 	border: 1px solid black;
@@ -261,8 +288,30 @@ a {
 	margin-bottom: 8px;
 }
 
+.login-form input[type="password"] {
+	margin-bottom: 15px;
+}
+
 .password-recovery {
 	float: right;
 	
 	text-align: right;
+}
+
+.login-form label {
+	float: left;
+}
+
+.login-form h2 {
+	margin-bottom: 20px;
+}
+
+.login-form p {
+	margin-bottom: 15px;
+}
+
+.login-form .btn {
+	clear: both;
+	width: 300px;
+	margin-top: 15px;
 }
