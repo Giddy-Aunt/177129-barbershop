@@ -6,13 +6,15 @@
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
-		<header class="main-header">
-			<div class="container">
-				<div class="header-logo">
-					<img width="111" height="24" src="img/logo.png" alt="Лого">
-				</div>
-				<nav class="main-menu">
+		<header class="main-header clearfix">
+			<div class="container clearfix">
+				<nav class="main-menu ">
 					<ul>
+						<li>
+							<a href="index.html">
+							<img width="111" height="24" src="img/logo.png" alt="Лого">
+							</a>
+						</li>
 						<li>
 							<a href="#">Информация</a>
 						</li>
@@ -35,9 +37,9 @@
 				</div>
 			</div>	
 		</header>
-		<main class="container">
+		<main class="container clearfix">
 			<h1 class="page-title">Набор для путешествий «Baxter of California»</h1>
-			<nav class="breadcrumbs">
+			<nav class="breadcrumbs ">
 				<ul>
 					<li>
 						<a href="#">Главная</a>
@@ -53,7 +55,7 @@
 					</li>
 				</ul>
 			</nav>
-			<div class="content product-gallery">
+			<div class="product-gallery">
 					<div class="gallery-content photo-1">
 						<img width="460" height="498" src="img/product-gallery.jpg" alt="Набор для путешествий «Baxter of California»">
 					</div>
@@ -67,12 +69,12 @@
 						<img width="140" height="149" src="img/product-gallery-3.jpg" alt="Набор для путешествий «Baxter of California»">
 					</div>
 			</div>
-			<div class="content product-description">
+			<div class="product-description">
 				<div class="availability">Есть в наличии</div>	
 				<div class="code-number">Артикул: dexter-ae</div>
 				<p>Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
 				<div class="price">2 900 руб.</div>
-				<a class="btn buy" href="#">Купить</a>
+				<a class="btn btn-buy" href="#">Купить</a>
 				<h2 class="title">В набор входят:</h2>
 				<ul class="list">
 					<li>Средство для умывания (50 мл)
@@ -88,8 +90,8 @@
 				</ul>
 			</div>
 		</main>
-		<footer class="main-footer">
-			<div class="container">
+		<footer class="main-footer clearfix">
+			<div class="container clearfix">
 				<section class="footer-contacts">
 					<p>Барбершоп «Бородинский»</p>
 					<p>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
@@ -112,15 +114,13 @@
 			<h2 class="title">Личный кабинет</h2>
 			<p>Введите пожалуйста свой логин и пароль</p>
 			<form action="#" method="post">
-				<label for="login-field">Логин</label>
 				<input type="text" name="login" id="login-field" placeholder="Логин">
-				<label for="password-field">Пароль</label>
 				<input type="password" name="password" id="password-field" placeholder="Пароль">
 				<label for="remember-field">			
 				<input type="checkbox" id="remember-field" name="rememberme">
 				Запомните меня
 				</label>
-				<a class="link" href="#">Я забыл пароль!</a>
+				<a class="password-recovery" href="#">Я забыл пароль!</a>
 				<a class="btn" href="#">Войти</a>
 			</form>
 		</div>

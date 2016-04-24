@@ -7,12 +7,14 @@
 	</head>
 	<body>
 		<header class="main-header">
-			<div class="container">
-				<div class="header-logo">
-					<img width="111" height="24" src="img/logo.png" alt="Лого">
-				</div>
-				<nav class="main-menu">
+			<div class="container clearfix">
+				<nav class=" main-menu">
 					<ul>
+						<li>
+							<a href="index.html">
+							<img width="111" height="24" src="img/logo.png" alt="Лого">
+							</a>
+						</li>
 						<li>
 							<a href="#">Информация</a>
 						</li>
@@ -35,9 +37,9 @@
 				</div>
 			</div>	
 		</header>
-		<main class="container">
+		<main class="container clearfix">
 			<h1 class="page-title">Средства для ухода</h1>
-			<nav class="breadcrumbs">
+			<nav class=" breadcrumbs">
 				<ul>
 					<li>
 						<a href="#">Главная</a>
@@ -50,12 +52,13 @@
 					</li>
 				</ul>
 			</nav>
-			<section class="content filters">
+			<section class="filters">
 				<form class="filters" action="#" method="post">
 					<h2 class="title">Производители</h2>
 					<fieldset>
 						<input type="checkbox" id="baxter-field" name="baxter">
 						<label for="baxter-field">Baxter of California</label>
+					</fieldset>
 					<fieldset>
 						<input type="checkbox" id="mrnatty-field" name="mrnatty">
 						<label for="mrnatty-field">Mr Natty</label>
@@ -72,6 +75,7 @@
 						<input type="checkbox" id="muurays-field" name="murrays">
 						<label for="muurays-field">Murray’s</label>
 					</fieldset>
+					<fieldset>
 						<input type="checkbox" id="americancrew-field" name="americancrew">
 						<label for="americancrew-field">American Crew</label>
 					</fieldset>
@@ -91,15 +95,15 @@
 					<button class="btn" type="submit">Посмотреть</button>
 				</form>
 			</section>
-			<section class="content catalog">
+			<section class="catalog">
 				<article class="product-card travel-kit">
 					<a href="catalog-item.html">
 						<img width="220" height="165" src="img/product-1.jpg" alt="Набор для путешествий «Baxter of California»">
-						<h2 class="product-card-title">Набор для путешествий</h2>
-						<h2 class="product-name">«Baxter of California»</h2>
+						<h2 class="product-name">Набор для путешествий</h2>
+						<h2 class="brand-name">«Baxter of California»</h2>
 					</a>
 					<div class="price">2 900 руб.</div>
-					<a class="btn buy" href="#">Купить</a>
+					<a class="btn btn-buy" href="#">Купить</a>
 				</article>
 				<article class="product-card conditioner">
 					<a href="#">
@@ -108,52 +112,52 @@
 						<h2 class="brand-name">«Baxter of California»</h2>
 					</a>
 					<div class="price">750 руб.</div>
-					<a class="btn buy" href="#">Купить</a>
+					<a class="btn btn-buy" href="#">Купить</a>
 				</article>
 				<article class="product-card hair-gel">
 					<a href="#">
 						<img width="220" height="165" src="img/product-3.jpg" alt="Гель для волос «SUAVECITO»">
-						<h2 class="product-card-title">Гель для волос</h2>
-						<h2 class="product-name">«SUAVECITO»</h2>
+						<h2 class="product-name">Гель для волос</h2>
+						<h2 class="brand-name">«SUAVECITO»</h2>
 					</a>
 					<div class="price">290 руб.</div>
-					<a class="btn buy" href="#">Купить</a>
+					<a class="btn btn-buy" href="#">Купить</a>
 				</article>
 				<article class="product-card hair-clay">
 					<a href="#">
 						<img width="220" height="165" src="img/product-4.jpg" alt="Глина для укладки волос «American crew»">
-						<h2 class="product-card-title">Глина для укладки волос</h2>
-						<h2 class="product-name">«American crew»</h2>
+						<h2 class="product-name">Глина для укладки волос</h2>
+						<h2 class="brand-name">«American crew»</h2>
 					</a>
 					<div class="price">500 руб.</div>
-					<a class="btn buy" href="#">Купить</a>
+					<a class="btn btn-buy" href="#">Купить</a>
 				</article>
 				<article class="product-card hair-gel-2">
 					<a href="#">
 						<img width="220" height="165" src="img/product-5.jpg" alt="Гель для волос «American crew»">
-						<h2 class="product-card-title">Гель для волос</h2>
-						<h2 class="product-name">«American crew»</h2>
+						<h2 class="product-name">Гель для волос</h2>
+						<h2 class="brand-name">«American crew»</h2>
 					</a>
 					<div class="price">300 руб.</div>
-					<a class="btn buy" href="#">Купить</a>
+					<a class="btn btn-buy" href="#">Купить</a>
 				</article>
 				<article class="product-card shaving-kit">
 					<a href="#">
 						<img width="220" height="165" src="img/product-6.jpg" alt="Набор для бритья «Baxter of California»">
-						<h2 class="product-card-title">Набор для бритья</h2>
-						<h2 class="product-name">«Baxter of California»</h2>
+						<h2 class="product-name">Набор для бритья</h2>
+						<h2 class="brand-name">«Baxter of California»</h2>
 					</a>
 					<div class="price">3 900 руб.</div>
-					<a class="btn buy" href="#">Купить</a>
+					<a class="btn btn-buy" href="#">Купить</a>
 				</article>					
 			</section>
-			<div class="paginator">
+			<div class=" paginator">
 				<ul>
 					<li>
 						<a class="btn" href="#">1</a>
 					</li>
 					<li>
-						<a class="current" href="#">2</a>
+						<a class="btn current" href="#">2</a>
 					</li>
 					<li>
 						<a class="btn" href="#">3</a>
@@ -164,8 +168,8 @@
 				</ul>
 			</div>
 		</main>
-		<footer class="main-footer">
-			<div class="container">
+		<footer class="main-footer clearfix">
+			<div class="container clearfix">
 				<section class="footer-contacts">
 					<p>Барбершоп «Бородинский»</p>
 					<p>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
@@ -188,15 +192,13 @@
 			<h2 class="title">Личный кабинет</h2>
 			<p>Введите пожалуйста свой логин и пароль</p>
 			<form action="#" method="post">
-				<label for="login-field">Логин</label>
 				<input type="text" name="login" id="login-field" placeholder="Логин">
-				<label for="password-field">Пароль</label>
 				<input type="password" name="password" id="password-field" placeholder="Пароль">
 				<label for="remember-field">			
 				<input type="checkbox" id="remember-field" name="rememberme">
 				Запомните меня
 				</label>
-				<a class="link" href="#">Я забыл пароль!</a>
+				<a class="password-recovery" href="#">Я забыл пароль!</a>
 				<a class="btn" href="#">Войти</a>
 			</form>
 		</div>
