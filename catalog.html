@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Средства для ухода</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
+		<link rel="stylesheet" href="css/normalize.css">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
@@ -11,7 +13,7 @@
 				<nav class=" main-menu">
 					<ul>
 						<li>
-							<a href="index.html">
+							<a class="logo" href="index.html">
 							<img width="111" height="24" src="img/logo.png" alt="Лого">
 							</a>
 						</li>
@@ -33,7 +35,7 @@
 					</ul>
 				</nav>
 				<div class="user-block">
-					<a class="btn login-btn" href="#">Вход</a>
+					<a class="login-btn" href="#">Вход</a>
 				</div>
 			</div>	
 		</header>
@@ -92,7 +94,7 @@
 						<input type="radio" id="accessories-field" name="product-type" value="accessories">
 						<label for="accessories-field">Аксессуары</label>
 					</fieldset>
-					<button class="btn" type="submit">Посмотреть</button>
+					<button class="btn" type="submit">Показать</button>
 				</form>
 			</section>
 			<section class="catalog">
@@ -150,31 +152,29 @@
 					<div class="price">3 900 руб.</div>
 					<a class="btn btn-buy" href="#">Купить</a>
 				</article>
-				<div class="paginator">
-					<ul>
-						<li>
-							<a class="btn" href="#">1</a>
-						</li>
-						<li>
-							<a class="btn current" href="#">2</a>
-						</li>
-						<li>
-							<a class="btn" href="#">3</a>
-						</li>
-						<li>
-							<a class="btn" href="#">4</a>
-						</li>
-					</ul>
-				</div>				
+				<ul class="paginator">
+					<li>
+						<a class="btn" href="#">1</a>
+					</li>
+					<li>
+						<a class="btn current" href="#">2</a>
+					</li>
+					<li>
+						<a class="btn" href="#">3</a>
+					</li>
+					<li>
+						<a class="btn" href="#">4</a>
+					</li>
+				</ul>				
 			</section>
 		</main>
 		<footer class="main-footer">
 			<div class="container clearfix">
 				<section class="footer-contacts">
-					<p>Барбершоп «Бородинский»</p>
-					<p>Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
-					<a href="#">Как нас найти?</a>
-					<p>Телефон: +7 (812) 666-02-66</p>
+					Барбершоп «Бородинский»<br>
+					Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+					<a href="#">Как нас найти?</a><br>
+					Телефон: +7 (812) 666-02-66
 				</section>
 				<section class="footer-social">
 					<p>Давайте дружить!</p>
